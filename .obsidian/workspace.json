@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,7 +183,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "35f6253dd1982c61",
+  "active": "f2f90036cfabdee9",
   "lastOpenFiles": [
     "08.ARCHITECTURE AGE Inkscript ideation.md",
     "09.ARCHITECTURE AGE AGEScript Idea.md",
