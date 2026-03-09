@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6665c9f736baa8ac",
+        "id": "657321e5499ede23",
         "type": "tabs",
         "children": [
           {
-            "id": "bfc5d1c8f0fea062",
+            "id": "d170339af261c1d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "B. VISION/02.VISION AGE Core Concept.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "02.VISION AGE Core Concept"
+              "title": "New tab"
             }
           }
         ]
@@ -183,24 +179,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "bfc5d1c8f0fea062",
+  "active": "f2f90036cfabdee9",
   "lastOpenFiles": [
-    "B. VISION/01.VISION AGE Executive Summary.md",
+    "E. EXTENSION/43.EXTENSION Hiree Candidates.md",
+    "E. EXTENSION/42.EXTENSION AGE Risks.md",
+    "A. OVERVIEW/00 README > AGE Vision Roadmap.md",
     "B. VISION/02.VISION AGE Core Concept.md",
+    "B. VISION/01.VISION AGE Executive Summary.md",
     "B. VISION/03.VISION AGE An Evolving Game Idea.md",
     "C. ARCHITECTURE/24.ARCHITECTURE AGE Partition and RAG.md",
-    "A. OVERVIEW/00 README > AGE Vision Roadmap.md",
-    "E. IMPLEMENTATION/34.IMPLEMENTATION AGE MVP Architecture.md",
-    "E. IMPLEMENTATION/33.IMPLEMENTATION AGE MoE Task Delegation.md",
-    "E. IMPLEMENTATION/32.IMPLEMENTATION AGE Agent Reasoning.md",
-    "E. IMPLEMENTATION/31.IMPLEMENTATION AGE Revenue Projection.md",
-    "E. IMPLEMENTATION/30.IMPLEMENTATION AGE Actors.md",
-    "E. IMPLEMENTATION/29.IMPLEMENTATION AGE Monorepo vs. Microservices.md",
-    "E. IMPLEMENTATION/26.IMPLEMENTATION AGE QA Certification.md",
-    "E. IMPLEMENTATION/28.IMPLEMENTATION AGE vs Memory Layers.md",
-    "E. IMPLEMENTATION/27.IMPLEMENTATION AGE RaaS Audit.md",
-    "E. IMPLEMENTATION/25.IMPLEMENTATION AGE Abstraction.md",
-    "E. IMPLEMENTATION",
+    "D. IMPLEMENTATION/34.IMPLEMENTATION AGE MVP Architecture.md",
+    "D. IMPLEMENTATION/33.IMPLEMENTATION AGE MoE Task Delegation.md",
+    "D. IMPLEMENTATION/32.IMPLEMENTATION AGE Agent Reasoning.md",
+    "D. IMPLEMENTATION/31.IMPLEMENTATION AGE Revenue Projection.md",
+    "D. IMPLEMENTATION/30.IMPLEMENTATION AGE Actors.md",
+    "D. IMPLEMENTATION/29.IMPLEMENTATION AGE Monorepo vs. Microservices.md",
+    "D. IMPLEMENTATION/26.IMPLEMENTATION AGE QA Certification.md",
+    "D. IMPLEMENTATION/28.IMPLEMENTATION AGE vs Memory Layers.md",
+    "D. IMPLEMENTATION/27.IMPLEMENTATION AGE RaaS Audit.md",
+    "D. IMPLEMENTATION/25.IMPLEMENTATION AGE Abstraction.md",
+    "D. IMPLEMENTATION",
     "IMPLEMENTATION/34.IMPLEMENTATION AGE MVP Architecture.md",
     "IMPLEMENTATION/33.IMPLEMENTATION AGE MoE Task Delegation.md",
     "IMPLEMENTATION/32.IMPLEMENTATION AGE Agent Reasoning.md",
@@ -210,9 +208,7 @@
     "IMPLEMENTATION/28.IMPLEMENTATION AGE vs Memory Layers.md",
     "IMPLEMENTATION/27.IMPLEMENTATION AGE RaaS Audit.md",
     "IMPLEMENTATION/26.IMPLEMENTATION AGE QA Certification.md",
-    "IMPLEMENTATION/25.IMPLEMENTATION AGE Abstraction.md",
-    "D. EXTENSION/41.EXTENSION AGE RaaS UX.md",
-    "D. EXTENSION",
+    "E. EXTENSION",
     "IMPLEMENTATION",
     "C. ARCHITECTURE",
     "B. VISION",
