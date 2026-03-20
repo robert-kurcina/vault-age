@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-quick-regex-sequence",
+	"name": "Quick Regex Sequence",
+	"version": "1.4.1",
+	"minAppVersion": "0.15.0",
+	"description": "Run a sequence of saved Regex Find/Replace actions on selected text.",
+	"author": "You",
+	"authorUrl": "https://github.com/yourname",
+	"isDesktopOnly": false
+}

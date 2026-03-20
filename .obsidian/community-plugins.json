@@ -2,5 +2,7 @@
   "obsidian-regex-replace",
   "text-finder",
   "tars",
-  "omnisearch"
+  "omnisearch",
+  "token-count-statusbar",
+  "obsidian-quick-regex-sequence"
 ]

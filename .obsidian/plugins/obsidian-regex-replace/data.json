@@ -1,0 +1,10 @@
+{
+  "findText": "^```\\nflowchart",
+  "replaceText": "```mermaid\nflowchart",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": true,
+  "processTab": false,
+  "prefillFind": true
+}

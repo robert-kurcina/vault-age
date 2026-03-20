@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BRUTAL Criticism - Qwen AI.md",
+                "file": "BRUTAL Criticism - ChatGPT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BRUTAL Criticism - Qwen AI"
+              "title": "BRUTAL Criticism - ChatGPT"
             }
           }
         ],
@@ -201,8 +201,8 @@
   },
   "active": "c8733d9658e45d60",
   "lastOpenFiles": [
-    "BRUTAL Criticism - ChatGPT.md",
     "BRUTAL Criticism - Qwen AI.md",
+    "BRUTAL Criticism - ChatGPT.md",
     "Tars/prompt.en.md",
     "C. ARCHITECTURE/24.ARCHITECTURE AGE Partition and RAG.md",
     "Tars",

@@ -1,0 +1,10 @@
+{
+    "id": "token-count-statusbar",
+    "name": "Token Count Status Bar",
+    "version": "0.1.0",
+    "minAppVersion": "1.5.0",
+    "description": "Shows GPT token count for the current note in the status bar.",
+    "author": "You",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}
