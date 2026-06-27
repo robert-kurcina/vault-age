@@ -1,4 +1,16 @@
-# MVP Build Charter
+# Minimum Viable Product [MVP] Build Charter
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
 
 ## Mission
 

@@ -1,5 +1,11 @@
 # Market-Selected Expansion Model
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Return on Investment [ROI] means practical economic return.
+
 ## Principle
 
 AGE does not need to choose the first professional domain in advance. The architecture should remain domain-portable. Expansion should follow market readiness, corpus access, licensing, ROI, expert availability, and governance feasibility.

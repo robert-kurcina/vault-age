@@ -1,5 +1,11 @@
 # Claims and Implementation — Core Runtime and Bridge Layer
 
+## Local definitions
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
+
 ## Claims
 
 - The LLM is not a state authority.

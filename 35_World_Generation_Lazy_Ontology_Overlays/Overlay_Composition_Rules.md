@@ -1,5 +1,9 @@
 # Overlay Composition Rules
 
+## Local definitions
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
 ## Principle
 
 Overlays are lenses, not owners. They inspect state and propose consequences. The Bridge Layer and State Mutation Engine decide whether anything becomes canonical.

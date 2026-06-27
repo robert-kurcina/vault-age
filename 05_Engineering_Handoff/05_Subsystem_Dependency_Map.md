@@ -1,5 +1,19 @@
 # Subsystem Dependency Map
 
+## Local definitions
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
+
+User Experience [UX] means the practical user experience of authoring, play, review, and operation.
+
+Application Programming Interface [API] means a software interface used by one system to request services from another.
+
 ## Hard dependencies
 
 The Fiction Constructor depends on State Assembler and Output Verifier.

@@ -1,5 +1,9 @@
 # Authority Tier Model
 
+## Local definitions
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
 ## Purpose
 
 CAL must distinguish source authority. A sourced answer is not automatically correct, and all sources are not equal.

@@ -1,4 +1,8 @@
-# White Paper 05B — AGEScript, Plot, and Eventing
+# White Paper 05B - AGEScript, Plot, and Eventing
+
+## Document definitions
+
+Amazing Game Engine [AGE] means the complete platform. AGEScript means the authored scenario and consequence schema layer. Eventing means the runtime mechanism that turns committed changes into future pressure, opportunities, and world reactions. Event Generator means the subsystem that creates bounded events from current state. Plot Rebinding means relocating unresolved story pressure when player action invalidates the original path.
 
 ## Plain definition
 
@@ -18,7 +22,7 @@ Event tables generate bounded surprises from current state, scope, overlay press
 
 ## Plot rebinding
 
-Plot rebinding lets unresolved story pressure attach to a different actor, location, clue, cost, or time window when player action invalidates the original path. Rebinding must preserve causality and consequence.
+Plot Rebinding lets unresolved story pressure attach to a different actor, location, clue, cost, or time window when player action invalidates the original path. Rebinding must preserve causality and consequence.
 
 ## Reward
 
@@ -26,11 +30,11 @@ Authors get robust scenario design. Players get freedom without collapsing the a
 
 ## Risk
 
-If rebinding is too aggressive, it feels like railroading. If too weak, content becomes brittle.
+If rebinding is too aggressive, it feels like railroading. If it is too weak, content becomes brittle.
 
 ## Mitigation
 
-Expose rebinding rules to authors, record rebinding events, and make costs/consequences visible in replay.
+Expose rebinding rules to authors, record rebinding events, and make costs and consequences visible in replay.
 
 ## Success criteria
 

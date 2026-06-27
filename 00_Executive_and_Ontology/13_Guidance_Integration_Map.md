@@ -1,5 +1,19 @@
 # Guidance Integration Map
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Roles-as-a-Service [RaaS] means a deprecated umbrella label in this archive; use Role Service, Rules Service, CAL, LMS-Graph, and Agent Service instead.
+
 ## Purpose
 
 This file records how the Claude-thread guidance summary is incorporated into the revised archive.

@@ -1,5 +1,27 @@
 # Source Migration Map
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
+
+Roles-as-a-Service [RaaS] means a deprecated umbrella label in this archive; use Role Service, Rules Service, CAL, LMS-Graph, and Agent Service instead.
+
+Retrieval-Augmented Generation [RAG] means generation guided by retrieved sources.
+
+Relational Database Management System [RDBMS] means a relational database system.
+
+Role-playing game [RPG] means a game in which players act through characters in a rule-governed imagined world.
+
 ## Purpose
 
 This map explains how the supplied archive sources and guidance inputs are used in the revised development archive.

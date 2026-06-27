@@ -1,4 +1,8 @@
-# White Paper 08 — Agent Service, MCP, and Professional Extensions
+# White Paper 08 - Agent Service, Model Context Protocol [MCP], and Professional Extensions
+
+## Document definitions
+
+Amazing Game Engine [AGE] means the complete platform. Agent Service means the later AGE subsystem that allows qualified roles to perform bounded external actions. Model Context Protocol [MCP] means a protocol pattern for connecting model systems to external tools and context providers. Application Programming Interface [API] means a software interface used by one system to request services from another. Role Service means the subsystem that governs bounded actors. Corpus Arbitration Layer [CAL] means the component that answers source-grounded corpus questions. Minimum Viable Product [MVP] means the first narrow product that proves the core AGE loop.
 
 ## Plain definition
 
@@ -10,7 +14,7 @@ Some future AGE roles may need to do more than speak: schedule, file, notify, cr
 
 ## Responsibility
 
-Agent Service owns action envelopes, external tool permissions, API/MCP integration, approval gates, revocation, audit, and human oversight.
+Agent Service owns action envelopes, external tool permissions, API and MCP integration, approval gates, revocation, audit, and human oversight.
 
 ## Relation to other subsystems
 
@@ -26,7 +30,7 @@ External action creates liability and safety exposure. A wrong answer is one ris
 
 ## Mitigation
 
-Keep Agent Service out of MVP. Require explicit permissions, narrow action scopes, human approval for consequential actions, replay, revocation, and audit.
+Keep Agent Service out of the MVP. Require explicit permissions, narrow action scopes, human approval for consequential actions, replay, revocation, and audit.
 
 ## Success criteria
 

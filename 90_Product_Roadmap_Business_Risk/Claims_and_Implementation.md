@@ -1,4 +1,8 @@
-# Claims and Implementation — Product Roadmap, Business Risk, and MVP Narrowing
+# Claims and Implementation — Product Roadmap, Business Risk, and Minimum Viable Product [MVP] Narrowing
+
+## Local definitions
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
 
 ## Claims
 

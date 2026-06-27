@@ -1,5 +1,11 @@
 # Acceptance Test Plan
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
 ## Purpose
 
 AGE needs tests that prove architecture, not only feature behavior. The primary failure to prevent is prose-driven truth drift.

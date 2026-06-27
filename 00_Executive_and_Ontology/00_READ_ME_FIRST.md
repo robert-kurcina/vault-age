@@ -1,4 +1,24 @@
-# Read Me First — AGE Development Orientation
+# Read Me First — Amazing Game Engine [AGE] Development Orientation
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+AGE Engine means the deterministic runtime inside AGE.
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Model Context Protocol [MCP] means a protocol pattern for connecting model systems to external tools and context providers.
+
+Application Programming Interface [API] means a software interface used by one system to request services from another.
+
+Roles-as-a-Service [RaaS] means a deprecated umbrella label in this archive; use Role Service, Rules Service, CAL, LMS-Graph, and Agent Service instead.
 
 AGE should be read as a platform architecture, not as a single game feature. The first product is a game-native runtime because games provide the safest and richest proving ground for persistent state, rules arbitration, authorship tooling, role behavior, natural-language interaction, and replayable audit trails.
 

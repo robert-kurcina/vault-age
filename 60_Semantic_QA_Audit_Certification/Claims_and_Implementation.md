@@ -1,4 +1,8 @@
-# Claims and Implementation — Semantic QA, Audit, and Certification Artifacts
+# Claims and Implementation — Semantic Quality Assurance [QA], Audit, and Certification Artifacts
+
+## Local definitions
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
 
 ## Claims
 

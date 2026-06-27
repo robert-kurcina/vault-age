@@ -1,5 +1,9 @@
 # Locale-to-World Shift Model
 
+## Local definitions
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
+
 ## Definition
 
 A locale-to-world shift is any transition where the active player focus moves from fine-grained scene play to broader spatial or narrative scope, or from broader scope back into fine-grained play.

@@ -1,4 +1,10 @@
-# CAL Output Envelope
+# Corpus Arbitration Layer [CAL] Output Envelope
+
+## Local definitions
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
 
 ## Purpose
 

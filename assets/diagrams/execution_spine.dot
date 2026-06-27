@@ -1,0 +1,7 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.25", ranksep="0.32"];
+  node [shape=box, style="rounded,filled", fillcolor="#f7f7f7", color="#444444", fontname="DejaVu Sans", fontsize=11, margin="0.10,0.06"];
+  edge [color="#555555", arrowsize=0.65];
+  a[label="User Input"]; b[label="Input Coordinator"]; c[label="Action Candidate"]; d[label="Bridge Validation"]; e[label="Domain Resolution"]; f[label="State Delta"]; g[label="State Commit"]; h[label="Event Bus"]; i[label="Context Packet"]; j[label="Fiction Output"]; k[label="Output Verifier"]; l[label="Replay Entry"];
+  a->b->c->d->e->f->g->h->i->j->k->l;
+}

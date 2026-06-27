@@ -1,5 +1,9 @@
 # Claims and Implementation — Spatial, Narrative, and Temporal Scope
 
+## Local definitions
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
+
 ## Claims
 
 - Spatial, narrative, and temporal scale are coupled.

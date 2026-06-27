@@ -1,26 +1,30 @@
-# AGE Ontology Primer
+# Amazing Game Engine [AGE] Ontology Primer
 
 ## Purpose
 
 This primer fixes the project vocabulary. AGE cannot be developed coherently if the same label refers to roles, rules, retrieval, arbitration, and external action. The governing principle is one subsystem, one name.
 
-## AGE
+## Amazing Game Engine [AGE]
 
-AGE is the total platform: runtime engine, authoring layer, game rules corpus, LMS-Graph, CAL, Role Service, client experience, Semantic QA, audit artifacts, marketplace pathway, serious-play pathway, and later Agent Service.
+AGE is the total platform: runtime engine, authoring layer, game rules corpus, Large Model System Graph [LMS-Graph], Corpus Arbitration Layer [CAL], Role Service, client experience, Semantic Quality Assurance [Semantic QA], audit artifacts, marketplace pathway, serious-play pathway, and later Agent Service.
 
 ## AGE Engine
 
 AGE Engine is the deterministic runtime. It receives user input, validates action candidates, resolves actions through modules, commits state, propagates events, assembles context, invokes the Fiction Constructor, verifies output, and records replay.
 
+## Large Language Model [LLM]
+
+LLM means Large Language Model. AGE may use an LLM to interpret natural language or render readable prose, but the LLM does not own canonical state.
+
 ## Fiction Constructor
 
 The Fiction Constructor is the LLM-based presentation layer. It turns committed outcomes and bounded context into readable prose. It does not own state, decide facts, arbitrate rules, advance time, reveal hidden information, or change canonical data.
 
-## LMS
+## Large Model System [LMS]
 
-LMS means Large Model System. It includes model inference, retrieval, graph search, agent coordination, tool access, MCP integration, workspace use, query decomposition, and bounded synthesis. It is broader than an LLM.
+LMS means Large Model System. It includes model inference, retrieval, graph search, agent coordination, tool access, Model Context Protocol [MCP] integration, workspace use, query decomposition, and bounded synthesis. It is broader than an LLM.
 
-## LMS-Graph
+## Large Model System Graph [LMS-Graph]
 
 LMS-Graph is the maintained graph/relational corpus substrate. It stores sources, concepts, rules, citations, dependencies, versions, examples, authority tiers, scope, jurisdiction, conflict states, and structured facts.
 
@@ -28,11 +32,11 @@ For the first AGE product, LMS-Graph should ingest a game rules corpus. Later co
 
 ## Anchored Corpus Arbitration [ACA]
 
-Anchored Corpus Arbitration is the operation: answer a user question by grounding it in a bounded corpus, exposing authority, and preserving human decision points.
+ACA is the operation of answering a user question by grounding it in a bounded corpus, exposing authority, and preserving human decision points.
 
-## CAL — Corpus Arbitration Layer
+## Corpus Arbitration Layer [CAL]
 
-CAL is the component that performs Anchored Corpus Arbitration. It receives a natural-language query, interprets it, selects corpus partitions, retrieves source evidence, weighs authority, surfaces conflicts, returns a primary answer and alternatives, identifies the human decision point, and logs the ruling.
+CAL is the component that performs ACA. It receives a natural-language query, interprets it, selects corpus partitions, retrieves source evidence, weighs authority, surfaces conflicts, returns a primary answer and alternatives, identifies the human decision point, and logs the ruling.
 
 ## Rules Service
 
@@ -40,15 +44,15 @@ Rules Service is a CAL deployment for rule systems. The first Rules Service targ
 
 ## Role Service
 
-Role Service defines bounded actor behavior. It governs NPCs, advisors, tutors, facilitators, authoring helpers, system helpers, and later professional support roles. It uses Role Semantic Contracts, role epistemology, memory scope, permissions, evidence rules, behavioral limits, and audit logs.
+Role Service defines bounded actor behavior. It governs non-player characters [NPCs], advisors, tutors, facilitators, authoring helpers, system helpers, and later professional support roles. It uses Role Semantic Contracts, role epistemology, memory scope, permissions, evidence rules, behavioral limits, and audit logs.
 
 Role Service can query CAL, but Role Service is not CAL.
 
 ## Agent Service
 
-Agent Service is the later MCP/API-connected action layer. It allows qualified roles to perform authorized external actions through action envelopes, permissions, review gates, audit logs, and human oversight. It is not part of the first MVP.
+Agent Service is the later MCP/Application Programming Interface [API]-connected action layer. It allows qualified roles to perform authorized external actions through action envelopes, permissions, review gates, audit logs, and human oversight. It is not part of the first Minimum Viable Product [MVP].
 
-## RaaS
+## Roles-as-a-Service [RaaS]
 
 RaaS is deprecated as an umbrella term. Use Role Service for roles, Rules Service for rules, CAL for corpus arbitration, LMS-Graph for corpus substrate, and Agent Service for external action.
 

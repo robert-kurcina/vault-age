@@ -1,4 +1,26 @@
-# AGE Implementation Roadmap
+# Amazing Game Engine [AGE] Implementation Roadmap
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+AGE Engine means the deterministic runtime inside AGE.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
+
+Application Programming Interface [API] means a software interface used by one system to request services from another.
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
+
+Relational Database Management System [RDBMS] means a relational database system.
 
 ## Roadmap principle
 

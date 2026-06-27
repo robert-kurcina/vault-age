@@ -1,5 +1,17 @@
 # Interface Contract Index
 
+## Local definitions
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Relational Database Management System [RDBMS] means a relational database system.
+
+Uniform Resource Identifier [URI] means a string that identifies a resource.
+
 ## Purpose
 
 This file names the contracts that must be specified before implementation can remain coherent. Contract names should remain stable even if schemas evolve.

@@ -1,5 +1,11 @@
 # Benchmark Matrix
 
+## Local definitions
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
+
 ## Runtime benchmarks
 
 | Benchmark | Measures | Failure signal |

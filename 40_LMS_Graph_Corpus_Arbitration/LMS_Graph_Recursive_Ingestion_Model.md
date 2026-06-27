@@ -1,4 +1,10 @@
-# LMS-Graph Recursive Ingestion Model
+# Large Model System Graph [LMS-Graph] Recursive Ingestion Model
+
+## Local definitions
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
 
 ## Ingestion principle
 

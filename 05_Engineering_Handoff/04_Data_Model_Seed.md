@@ -1,5 +1,9 @@
 # Data Model Seed
 
+## Local definitions
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
+
 ## Entity classes
 
 - Actor: player character, NPC, role instance, system actor.

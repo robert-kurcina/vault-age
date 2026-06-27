@@ -1,4 +1,10 @@
-# Claims and Implementation — Authoring UX and Capture
+# Claims and Implementation — Authoring User Experience [UX] and Capture
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+User Experience [UX] means the practical user experience of authoring, play, review, and operation.
 
 ## Claims
 

@@ -1,5 +1,11 @@
 # Output Envelope Summary
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
 ## Purpose
 
 AGE output should be readable to players and auditable to systems. The archive therefore distinguishes narrative output from structured envelopes.

@@ -1,5 +1,9 @@
 # Claims and Implementation — AGEScript, Plot, and Eventing
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
 ## Claims
 
 - AGE uses consequence-first authored structure.

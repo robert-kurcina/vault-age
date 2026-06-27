@@ -1,5 +1,11 @@
 # Improvement Pass Change Log
 
+## Local definitions
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
+
 ## Main improvement
 
 This pass turns the archive from a set of polished subsystem notes into a stronger development handoff package.

@@ -1,5 +1,11 @@
 # Human Authority Model
 
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
 ## Principle
 
 AGE presents, structures, resolves, retrieves, compares, and records. AGE does not erase human authority. The system must always expose whether a result is automatic, configured by policy, or subject to human judgment.

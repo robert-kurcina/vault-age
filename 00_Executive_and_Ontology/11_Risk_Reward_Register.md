@@ -1,4 +1,22 @@
-# AGE Risk and Reward Register
+# Amazing Game Engine [AGE] Risk and Reward Register
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
+
+User Experience [UX] means the practical user experience of authoring, play, review, and operation.
 
 ## Purpose
 

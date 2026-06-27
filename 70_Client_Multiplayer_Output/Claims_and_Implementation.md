@@ -1,5 +1,9 @@
 # Claims and Implementation — Client, Multiplayer, Communication, and Output
 
+## Local definitions
+
+User Interface [UI] means the visible controls, screens, prompts, panels, and displays.
+
 ## Claims
 
 - The client should hide engine complexity while exposing state-relevant feedback.

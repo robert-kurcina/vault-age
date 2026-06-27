@@ -1,4 +1,22 @@
-# AGE Design Record — Objections and Resolutions
+# Amazing Game Engine [AGE] Design Record — Objections and Resolutions
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
+
+Uniform Resource Identifier [URI] means a string that identifies a resource.
 
 This design record captures the objection categories used by AGE as architectural pressure tests. Each objection is treated as a development constraint with a corresponding AGE mechanism.
 

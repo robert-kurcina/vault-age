@@ -1,4 +1,16 @@
-# AGE MVP Scope Charter
+# Amazing Game Engine [AGE] Minimum Viable Product [MVP] Scope Charter
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
+
+Quality Assurance [QA] means testing and review; Semantic QA tests meaning, authority, role behavior, rules, state, and prose-state agreement.
+
+Application Programming Interface [API] means a software interface used by one system to request services from another.
 
 ## Purpose
 

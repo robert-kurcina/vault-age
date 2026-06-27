@@ -1,5 +1,9 @@
 # Claims and Implementation — Agent Service, MCP, and Professional Extensions
 
+## Local definitions
+
+Model Context Protocol [MCP] means a protocol pattern for connecting model systems to external tools and context providers.
+
 ## Claims
 
 - Agent Service is deferred until core systems are mature.

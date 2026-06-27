@@ -1,4 +1,20 @@
-# AGE Architecture Diagram — Text Form
+# Amazing Game Engine [AGE] Architecture Diagram — Text Form
+
+## Local definitions
+
+Amazing Game Engine [AGE] means the complete platform described by this archive.
+
+AGE Engine means the deterministic runtime inside AGE.
+
+Large Language Model [LLM] means a generative language model used for language interpretation or presentation.
+
+Large Model System [LMS] means the wider model, retrieval, graph, tool, agent, and workspace system around one or more LLMs.
+
+Large Model System Graph [LMS-Graph] means the maintained graph/relational corpus substrate.
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
 
 ```text
 USER / PLAYER / AUTHOR

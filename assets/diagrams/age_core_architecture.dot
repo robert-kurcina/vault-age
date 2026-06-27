@@ -1,0 +1,20 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.42"];
+  node [shape=box, style="rounded,filled", fillcolor="#f6f6f6", color="#444444", fontname="DejaVu Sans", fontsize=12, margin="0.12,0.08"];
+  edge [color="#555555", fontname="DejaVu Sans", fontsize=10, arrowsize=0.7];
+  input [label="User Input"];
+  bridge [label="Bridge Layer\nvalidation, permission, scope, timing"];
+  modules [label="Domain Modules\nspatial, rules, inventory, plot, events"];
+  commit [label="State Mutation Engine\nonly canonical commit path"];
+  event [label="Event Bus\nstructured consequences"];
+  context [label="State Assembler\nbounded context packet"];
+  fiction [label="Fiction Constructor\nLLM presentation only"];
+  verify [label="Output Verifier\nprose checked against state"];
+  output [label="Client Output + Replay Log"];
+  input -> bridge -> modules -> commit -> event -> context -> fiction -> verify -> output;
+  cal [label="Corpus Arbitration Layer [CAL]\nsource-grounded rulings", fillcolor="#eef4ff"];
+  lms [label="Large Model System Graph [LMS-Graph]\nversioned corpus substrate", fillcolor="#eef4ff"];
+  bridge -> cal [label="rules or corpus question"];
+  cal -> lms [label="retrieve and weigh sources"];
+  cal -> bridge [label="arbitration envelope"];
+}

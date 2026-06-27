@@ -1,8 +1,14 @@
-# White Paper 06B — Authoring UX and Capture
+# White Paper 06B - Authoring User Experience [UX] and Capture
+
+## Document definitions
+
+Amazing Game Engine [AGE] means the complete platform. User Experience [UX] means the author's practical interaction with AGE tools. User Interface [UI] means the visible controls, screens, forms, panels, prompts, and previews used to operate those tools. AGEScript means the authored scenario and consequence schema layer. Corpus Arbitration Layer [CAL] means the component that answers corpus questions from source evidence.
+
+Non-player character [NPC] means a character controlled by the system, Referee, or authored scenario rather than by a player.
 
 ## Plain definition
 
-Authoring UX turns AGE’s architecture into usable creative tools. It lets authors define worlds, systems, roles, events, overlays, and scripts without directly manipulating raw engine structures.
+Authoring UX turns AGE's architecture into usable creative tools. It lets authors define worlds, systems, roles, events, overlays, and scripts without directly manipulating raw engine structures.
 
 ## Problem addressed
 

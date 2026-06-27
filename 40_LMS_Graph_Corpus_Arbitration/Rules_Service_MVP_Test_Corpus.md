@@ -1,4 +1,10 @@
-# Rules Service MVP Test Corpus
+# Rules Service Minimum Viable Product [MVP] Test Corpus
+
+## Local definitions
+
+Corpus Arbitration Layer [CAL] means the component that answers unstructured questions against LMS-Graph.
+
+Minimum Viable Product [MVP] means the smallest product that proves the core AGE loop.
 
 ## Purpose
 
