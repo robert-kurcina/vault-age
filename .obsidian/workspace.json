@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BRUTAL Criticism - ChatGPT.md",
+                "file": "_artifacts/BRUTAL Criticism - Qwen AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BRUTAL Criticism - ChatGPT"
+              "title": "BRUTAL Criticism - Qwen AI"
             }
           }
         ],
@@ -199,8 +199,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c8733d9658e45d60",
+  "active": "f2f90036cfabdee9",
   "lastOpenFiles": [
+    "_artifacts/BRUTAL Criticism - ChatGPT.md",
+    "_artifacts/AGE-LMS-Graph-White-Paper.pdf",
     "BRUTAL Criticism - Qwen AI.md",
     "BRUTAL Criticism - ChatGPT.md",
     "Tars/prompt.en.md",
@@ -228,7 +230,6 @@
     "IMPLEMENTATION/34.IMPLEMENTATION AGE MVP Architecture.md",
     "IMPLEMENTATION/33.IMPLEMENTATION AGE MoE Task Delegation.md",
     "IMPLEMENTATION/32.IMPLEMENTATION AGE Agent Reasoning.md",
-    "IMPLEMENTATION/31.IMPLEMENTATION AGE Revenue Projection.md",
     "E. EXTENSION",
     "IMPLEMENTATION",
     "C. ARCHITECTURE",
