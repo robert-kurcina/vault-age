@@ -1,10 +1,11 @@
-# Amazing Game Engine [AGE] PDF Exports
+# PDF Exports
 
-Amazing Game Engine [AGE] means the total platform described by this archive.
+This directory contains the two requested PDF outputs for the informative AGE pass.
 
-This directory contains the two current PDF exports for the definition-first pass.
+- `AGE_Executive_Summary.pdf` gives the complete executive reader path.
+- `AGE_Aggregated_White_Papers.pdf` combines the subsystem white papers into one volume.
 
-1. `AGE_Executive_Summary.pdf` - the standalone executive summary.
-2. `AGE_Aggregated_White_Papers.pdf` - the combined white paper volume with a table of contents.
+The Markdown sources are located at:
 
-The individual white paper PDFs from the earlier export pass were removed to avoid stale duplication. The source Markdown files remain in their subsystem directories, and the aggregated Markdown source is `00_Executive_and_Ontology/18_AGE_Aggregated_White_Papers.md`.
+- `../00_Executive_and_Ontology/01_AGE_Executive_Summary.md`
+- `../00_Executive_and_Ontology/18_AGE_Aggregated_White_Papers.md`
