@@ -279,21 +279,26 @@ PDF requirements:
 
 1. include a table of contents;
 2. do not force page breaks before major top-level sections;
-3. set ordinary body prose in two columns;
-4. keep tables, diagrams, illustrations, and code blocks full-width;
+3. use single-column ordinary body prose unless a future export pipeline proves reliable keep-with-next, keep-with-children, and full-width block behavior;
+4. keep tables, diagrams, illustrations, and code blocks visually distinct and readable;
 5. preserve diagrams and tables;
-4. avoid clipped text, broken tables, black squares, and missing glyphs;
-5. include an Addendum section;
-6. place glossary and citations in the Addendum;
-7. keep generated PDFs in `90_PDF_Exports/` inside the archive.
+6. avoid clipped text, broken tables, black squares, missing glyphs, orphaned headings, and headings separated from their immediate examples;
+7. include an Addendum section;
+8. place glossary and citations in the Addendum;
+9. keep generated PDFs in `90_PDF_Exports/` inside the archive.
 
-For Pandoc and LaTeX exports, do not enforce automatic page breaks before top-level Markdown headings unless a special print edition explicitly requires that treatment.
+Two-column export is allowed only when the rendering system can reliably keep a heading with its next paragraph, list, code block, table, or figure. If full-width blocks cause orphaned headings or broken reading order, return to single-column layout. AGE technical documents are reference documents first. Dense layout is secondary to correct reading order.
+
+For Pandoc, LaTeX, HTML, and WeasyPrint exports, do not enforce automatic page breaks before top-level Markdown headings unless a special print edition explicitly requires that treatment.
 
 ```css
 .top-section { break-before: auto; }
+h2, h3 { break-after: avoid; page-break-after: avoid; }
+pre, table, figure, .codeblock, .tableblock, .figureblock { break-inside: avoid; page-break-inside: avoid; }
+.keepgroup { break-inside: avoid; page-break-inside: avoid; }
 ```
 
-Do not insert manual page-break clutter into Markdown files. Use ordinary heading flow unless a special print edition calls for explicit page starts.
+When a heading or lead sentence introduces a code block, table, or figure, the export layer may wrap both elements in a keepgroup so the introduction does not strand above the example. Do not insert manual page-break clutter into Markdown files. Use ordinary heading flow unless a special print edition calls for explicit page starts.
 
 ## 19. Tables and Post-Table Notes
 
@@ -452,6 +457,7 @@ Before an AGE document is ready, confirm:
 - Diagrams have source and rendered output in `assets/diagrams/`.
 - PDF exports include a table of contents.
 - PDF exports do not force page breaks before top-level sections.
+- PDF exports use single-column body prose unless two-column keep-with-next behavior is proven reliable.
 - Major PDFs have an Addendum with glossary and citations.
 - Generated PDFs are included inside `90_PDF_Exports/`.
 - Origin source remains in `_resource/origin_branch/`.

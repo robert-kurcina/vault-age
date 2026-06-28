@@ -1,4 +1,4 @@
-# AGE Technical Presentation Pass 5 No Top-Level Breaks Archive
+# AGE Technical Presentation Pass 6 Single Column Archive
 
 This archive applies the AGE Style Guide to the technical white-paper corpus and corrects the prior over-promotion of Retrieval-Augmented Generation [RAG]. In this pass, RAG is treated as a read-only, context-consuming support tool. It is not a partition mechanism, truth store, mutation authority, or efficient substitute for structured state.
 
@@ -69,3 +69,10 @@ Graphviz DOT sources and PNG renders are retained in `assets/diagrams/`.
 ## Pass 5 PDF layout correction
 
 The AGE Style Guide no longer requires page breaks before top-level sections. The PDFs retain a table of contents and cover-page breaks, but ordinary top-level sections continue in document flow unless a table, diagram, code block, or natural pagination requires a new page.
+
+
+## Pass 6 Layout Correction
+
+Pass 6 returns the PDF exports to single-column body prose. The prior two-column export could place a heading in one column while its immediate example, table, or code block was forced below as a full-width block. That behavior broke the effective keep-with-next / keep-with-children relationship needed for technical reference material.
+
+The archive retains full-width diagrams, tables, and code blocks as distinct visual material, but ordinary prose now flows in one column for reliable reading order.
