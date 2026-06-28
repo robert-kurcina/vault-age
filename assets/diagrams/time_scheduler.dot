@@ -1,0 +1,21 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  wta [label="World Time Authority\nabsolute tick counter"];
+  policies [label="TickPolicy Registry\nseconds to years by partition"];
+  scheduler [label="Event Scheduler\npriority queue by due tick"];
+  validator [label="Prerequisite Validator\nflags, location, visibility"];
+  resolver [label="Deterministic Resolver\nseeded outcomes"];
+  commit [label="State Mutation Engine\ncommit event effects"];
+  missed [label="Missed Event Register\nsummary on observation"];
+  render [label="Fiction Constructor\nforeshadowing and aftermath"];
+  wta -> scheduler;
+  policies -> scheduler;
+  scheduler -> validator;
+  validator -> resolver [label="eligible"];
+  validator -> missed [label="not observed or deferred", style=dashed];
+  resolver -> commit -> render;
+  missed -> render;
+}

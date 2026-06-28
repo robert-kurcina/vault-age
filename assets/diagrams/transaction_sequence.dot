@@ -1,0 +1,22 @@
+
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.55"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  start [label="1. Natural-language input"];
+  classify [label="2. Classify: action, question, command, authoring"];
+  lock [label="3. Read versions and acquire write intent"];
+  resolve [label="4. Resolve rules, time, location, visibility"];
+  propose [label="5. Generate candidate prose and candidate deltas"];
+  validate [label="6. Validate invariants and corpus authority"];
+  conflict [label="7. Version conflict?", shape=diamond, fillcolor="#FFFFFF"];
+  merge [label="8A. Apply conflict policy\nretry, reject, or game resolution"];
+  commit [label="8B. Commit mutations and append event log"];
+  verify [label="9. Verify output against committed state"];
+  answer [label="10. Return response envelope"];
+  start -> classify -> lock -> resolve -> propose -> validate -> conflict;
+  conflict -> merge [label="yes"];
+  merge -> resolve [label="retry if needed"];
+  conflict -> commit [label="no"];
+  commit -> verify -> answer;
+}

@@ -1,0 +1,14 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  pack [label="Audit Pack\nseeds, prompts, invariants"];
+  run [label="Replay Harness\nfrozen model and tools"];
+  checks [label="Semantic Checks\nanchor, leakage, drift, rule use"];
+  report [label="Certification Report\nfailures and grade"];
+  fix [label="Repair Pass\ncontent, schema, prompt, policy"];
+  pack -> run -> checks -> report;
+  report -> fix [label="if failed"];
+  fix -> pack;
+}

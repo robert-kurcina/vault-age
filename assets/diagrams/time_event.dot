@@ -1,0 +1,20 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#f8f8f8", color="#333333", fontname="DejaVu Sans", fontsize=10];
+  edge [color="#333333", fontname="DejaVu Sans", fontsize=9];
+  wta [label="World Time Authority\nabsolute tick counter"];
+  scheduler [label="Event Scheduler\npriority queue by tick"];
+  prereq [label="Prerequisite Validator\nT-minus check"];
+  resolver [label="Deterministic Resolver\noutcome before prose"];
+  mutation [label="State Mutation Engine\natomic event effects"];
+  fc [label="Fiction Constructor\nforeshadowing, event prose, aftermath"];
+  missed [label="Missed Event Register\nsummarize on return"];
+  wta -> scheduler [label="time_advanced"];
+  scheduler -> prereq [label="next due event"];
+  prereq -> resolver [label="eligible event"];
+  resolver -> mutation [label="committable effects"];
+  mutation -> fc [label="state snapshot + hooks"];
+  scheduler -> missed [label="player absent"];
+  missed -> fc [label="return summary"];
+}

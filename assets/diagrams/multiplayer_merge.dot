@@ -1,0 +1,14 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  inputs [label="Simultaneous player inputs\nspotlight window"];
+  classify [label="Input Coordinator\ncompatible, competing, conflicting"];
+  aggregate [label="Aggregation Rules\nmajority, role, initiative, position"];
+  occ [label="Optimistic Concurrency Control\nversion check"];
+  policy [label="Conflict Policy\nmechanical resolution or reject"];
+  branch [label="BranchRecord\ntroupe-local commit"];
+  ripple [label="Ripple Event\nredacted cross-troupe influence"];
+  inputs -> classify -> aggregate -> occ -> policy -> branch -> ripple;
+}

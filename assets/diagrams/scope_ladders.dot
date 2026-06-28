@@ -1,8 +1,0 @@
-digraph G {
-  graph [rankdir=TB, bgcolor="white", pad="0.2", nodesep="0.22", ranksep="0.42"];
-  node [shape=box, style="rounded,filled", fillcolor="#f7f7f7", color="#444444", fontname="DejaVu Sans", fontsize=10, margin="0.08,0.05"];
-  edge [style=invis];
-  subgraph cluster0 {label="Spatial Scope"; color="#aaaaaa"; s1[label="Submap"]; s2[label="Locus"]; s3[label="Realm"]; s4[label="Region"]; s5[label="World"]; s1->s2->s3->s4->s5;}
-  subgraph cluster1 {label="Narrative Scope"; color="#aaaaaa"; n1[label="Spotlight"]; n2[label="Scene"]; n3[label="Act"]; n4[label="Chapter"]; n5[label="Arc / Epic"]; n1->n2->n3->n4->n5;}
-  subgraph cluster2 {label="Temporal Scope"; color="#aaaaaa"; t1[label="Moment"]; t2[label="Scene Time"]; t3[label="Session Time"]; t4[label="Campaign Time"]; t5[label="World-History Time"]; t1->t2->t3->t4->t5;}
-}

@@ -1,40 +1,55 @@
-# Amazing Game Engine [AGE] Definition-First Informative Archive
+# AGE Technical Presentation Pass 3 Styleguided Archive
 
-The Amazing Game Engine [AGE] is a state-authoritative narrative simulation and anchored corpus arbitration platform. This archive reorganizes the AGE development materials into subsystem directories and replaces the prior outline-style Executive Summary and White Papers with informative reader-facing documents.
+This archive applies the AGE Style Guide to the technical white-paper corpus.
 
-## Primary reader path
+## Primary style guide
 
-1. `00_Executive_and_Ontology/01_AGE_Executive_Summary.md`
-2. `00_Executive_and_Ontology/18_AGE_Aggregated_White_Papers.md`
-3. `05_Engineering_Handoff/01_MVP_Build_Charter.md`
-4. The subsystem white papers in directories `10_` through `90_`
+- `00_Meta/00_AGE_STYLE_GUIDE.md`
 
-## PDF exports
+The AGE Style Guide requires definition-before-use, visible process, ordered and unordered lists, property-sheet examples, calculations where useful, diagrams where useful, PDF page breaks between top-level sections, Addendum sections with glossary and citations, and preservation of source material under `_resource/`.
 
-Two PDF exports are included in `00_PDF_Exports/`.
+## Primary documents
 
-- `AGE_Executive_Summary.pdf`
-- `AGE_Aggregated_White_Papers.pdf`
+- `00_Executive/01_AGE_Technical_Executive_Summary_Pass2.md`
+- `10_White_Papers/00_AGE_Aggregated_Technical_White_Papers_Pass2.md`
 
-The PDFs include tables of contents and rendered architecture diagrams.
+The filenames preserve the Pass 2 source lineage, but the contents are now Styleguided Pass 3.
 
-## Subsystem directories
+## PDF exports included in this archive
 
-- `10_Core_Runtime_and_Bridge/`
-- `15_Engine_Execution_Spine/`
-- `20_Narrative_Scope_and_AGEScript/`
-- `25_Spatial_Narrative_Temporal_Scope/`
-- `30_Partitions_State_Memory/`
-- `35_World_Generation_Lazy_Ontology_Overlays/`
-- `40_LMS_Graph_Corpus_Arbitration/`
-- `45_AGEScript_Plot_Eventing/`
-- `50_Role_Service_and_Actors/`
-- `55_Authoring_UX_Capture/`
-- `60_Semantic_QA_Audit_Certification/`
-- `70_Client_Multiplayer_Output/`
-- `80_Agent_Service_Extensions/`
-- `90_Product_Roadmap_Business_Risk/`
+- `90_PDF_Exports/AGE_Technical_Executive_Summary_Pass3_Styleguided_20260628.pdf`
+- `90_PDF_Exports/AGE_Aggregated_Technical_White_Papers_Pass3_Styleguided_20260628.pdf`
 
-## Editorial rule
+## Resource directory
 
-The archive follows a definition-before-use rule for acronyms and named concepts. The current pass also corrects the prior failure where definition compliance produced documents that read like outlines. These papers now use prose first, diagrams second, and tables as lookup aids.
+- `_resource/origin_branch/Archive.zip`
+- `_resource/origin_branch/extracted/`
+- `_resource/style_guides/00_AGE_STYLE_GUIDE.md`
+- `_resource/style_guides/00_SH44SER_STYLE_GUIDE.md`
+- `_resource/comparison_whitepapers/`
+- `_resource/resource_inventory/00_Resource_Inventory.md`
+
+## Individual subsystem white papers
+
+- `10_White_Papers/01_Core_Runtime_and_State_Authority.md`
+- `10_White_Papers/02_Property_Sheets_and_State_Model.md`
+- `10_White_Papers/03_Partitions_Database_Boundaries_and_RAG.md`
+- `10_White_Papers/04_Time_Location_and_Causal_Cohesion.md`
+- `10_White_Papers/05_AGEScript_Event_Generators_and_Consequence.md`
+- `10_White_Papers/06_LMS_Graph_CAL_and_Rules_Authority.md`
+- `10_White_Papers/07_Multiplayer_Branching_and_Troupe_Isolation.md`
+- `10_White_Papers/08_Role_Runtime_Actors_and_Output_Modality.md`
+- `10_White_Papers/09_Database_Event_Sourcing_and_Service_APIs.md`
+- `10_White_Papers/10_Semantic_QA_Replay_and_Certification.md`
+- `10_White_Papers/11_Worked_Dagon_Style_Runtime_Trace.md`
+- `10_White_Papers/12_MVP_Implementation_Roadmap_and_Evaluation.md`
+
+## Specifications
+
+- `20_Specifications/01_Property_Sheet_and_Runtime_Packet_Reference.md`
+- `20_Specifications/02_AGEScript_Reference_Sketch.md`
+- `20_Specifications/03_QA_Audit_Pack_Reference.md`
+
+## Diagrams
+
+Graphviz DOT sources and PNG renders are retained in `assets/diagrams/`.

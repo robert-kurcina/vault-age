@@ -1,0 +1,23 @@
+
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.55"];
+  node [shape=box, style="rounded,filled", fillcolor="#F7F7F7", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  world [label="Spatial: World\nNarrative: Epic"];
+  region [label="Spatial: Region\nNarrative: Arc"];
+  realm [label="Spatial: Realm\nNarrative: Chapter"];
+  locus [label="Spatial: Locus\nNarrative: Act"];
+  submap [label="Spatial: Submap\nNarrative: Scene"];
+  spotlight [label="Spotlight\nseconds or minutes"];
+  econ [label="ConcernPartition: Economy\nresource invariants"];
+  law [label="ConcernPartition: Law\nlegal consequences"];
+  troupeA [label="Troupe A branch\nlocal visibility"];
+  troupeB [label="Troupe B branch\nlocal visibility"];
+  world -> region -> realm -> locus -> submap -> spotlight;
+  econ -> realm [style=dotted, label="overlay"];
+  law -> submap [style=dotted, label="overlay"];
+  submap -> troupeA;
+  submap -> troupeB;
+  troupeA -> world [style=dashed, label="redacted ripple event"];
+  world -> troupeB [style=dashed, label="rumor, news, or changed resource"];
+}

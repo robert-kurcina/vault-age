@@ -1,0 +1,17 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.55", ranksep="0.7"];
+  node [shape=record, style="rounded,filled", fillcolor="#F7F7F7", color="#222222", fontname="DejaVu Sans", fontsize=9];
+  partition [label="{PartitionRecord|partition_id\nparent_id\nfacets\ntick_policy\nbridge_policy\nvalidation_policy\nversion}"];
+  location [label="{LocationSheet|location_id\nparent_location\nexits\ntravel_time\nconditions\ncontained_entities\nversion}"];
+  actor [label="{ActorSheet|actor_id\nrole\nagency_class\nlocation_id\ninventory_id\ntraits\nvisibility\nversion}"];
+  object [label="{ObjectSheet|object_id\nobject_type\nowner_id\ncontainer_id\nlocation_id\nquantity\nstate\nversion}"];
+  event [label="{EventSheet|event_id\nscheduled_tick\nprerequisites\neffects\nmissed_policy\nversion}"];
+  claim [label="{CorpusClaim|claim_id\nsource_id\nauthority_tier\nconcepts\nconflicts\nversion}"];
+  partition -> location [label="contains"];
+  location -> actor [label="located_at"];
+  location -> object [label="contains"];
+  actor -> object [label="inventory"];
+  event -> partition [label="scheduled_in"];
+  claim -> partition [label="constrains"];
+}

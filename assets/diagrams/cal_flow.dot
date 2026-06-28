@@ -1,0 +1,15 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  query [label="Rules or lore question"];
+  parse [label="Query Analyzer\nconcepts and scope"];
+  retrieve [label="Large Model System Graph\nclaims, sources, concepts"];
+  weight [label="Corpus Arbitration Layer\nauthority, version, conflict"];
+  answer [label="Answer Packet\nclaim, evidence, uncertainty"];
+  human [label="Human Ruling Queue\nwhen conflict remains"];
+  query -> parse -> retrieve -> weight -> answer;
+  weight -> human [style=dashed, label="unresolved conflict"];
+  human -> retrieve [style=dashed, label="new authoritative claim"];
+}

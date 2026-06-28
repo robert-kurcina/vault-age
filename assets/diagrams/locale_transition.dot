@@ -1,0 +1,13 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  origin [label="Origin LocationSheet\ncurrent conditions"];
+  route [label="Route Edge\ntravel time, hazards, visibility"];
+  packet [label="TransitionPacket\norigin, route, destination, tick span"];
+  sched [label="Crossed Event Check\nevents due during travel"];
+  commit [label="Commit location, time, carried objects"];
+  dest [label="Destination LocationSheet\nassembled for next scene"];
+  origin -> route -> packet -> sched -> commit -> dest;
+}

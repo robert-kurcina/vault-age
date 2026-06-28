@@ -1,0 +1,16 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#222222", fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9];
+  source [label="AGEScript source\nscene, spotlight, outcomes"];
+  compiler [label="Compiler\nschema and invariant checks"];
+  artifact [label="Compiled JavaScript Object Notation\ndeterministic scene artifact"];
+  bridge [label="Bridge Layer\ncollect inputs and resolve"];
+  mut [label="Mutation Packet\napproved state changes"];
+  hooks [label="Narrative Hooks\nrequired facts for prose"];
+  render [label="Fiction Constructor\nrender after outcome known"];
+  source -> compiler -> artifact -> bridge;
+  bridge -> mut;
+  bridge -> hooks -> render;
+}

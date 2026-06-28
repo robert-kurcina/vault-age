@@ -1,0 +1,21 @@
+
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.2", nodesep="0.45", ranksep="0.55"];
+  node [shape=box, style="rounded,filled", fillcolor="#f8f8f8", color="#333333", fontname="DejaVu Sans", fontsize=10];
+  edge [color="#333333", fontname="DejaVu Sans", fontsize=9];
+  entity [label="Entity Sheet\ncommon identity, scope, version"];
+  actor [label="Actor Sheet\ncapabilities, agency, identity"];
+  location [label="Location Sheet\nspatial node, exits, conditions"];
+  object [label="Object Sheet\nitem, container, resource pool"];
+  event [label="Event Sheet\nschedule, prerequisites, effects"];
+  role [label="Role Sheet\nallowed tools, output contract"];
+  entity -> actor;
+  entity -> location;
+  entity -> object;
+  entity -> event;
+  entity -> role;
+  location -> object [label="contains / located_in"];
+  actor -> object [label="inventory / equipped"];
+  event -> location [label="occurs_at"];
+  event -> object [label="creates / mutates"];
+}

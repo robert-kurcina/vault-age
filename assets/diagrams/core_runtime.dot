@@ -1,0 +1,23 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.5", ranksep="0.7"];
+  node [shape=box, style="rounded,filled", fillcolor="#f8f8f8", color="#333333", fontname="DejaVu Sans", fontsize=10];
+  edge [color="#333333", fontname="DejaVu Sans", fontsize=9];
+  user [label="Player or Client Input"];
+  input [label="Input Coordinator\nparse, normalize, route"];
+  scope [label="Scope Resolver\nactive partitions, location, time"];
+  assembler [label="State Assembler\ncontext packet"];
+  fc [label="Fiction Constructor\nLarge Language Model proposes prose"];
+  arb [label="Consistency Arbiter\nconstraints, canon, rules"];
+  mutation [label="State Mutation Engine\nvalidated commits only"];
+  store [label="Memory Substrate\nstate DB, event log, corpus graph"];
+  output [label="Output Verifier\nstate-faithful response envelope"];
+  user -> input -> scope -> assembler -> fc -> arb;
+  arb -> mutation [label="approved deltas"];
+  arb -> fc [label="revise / reject", style=dashed];
+  mutation -> store [label="commit + event log"];
+  store -> assembler [label="read models"];
+  mutation -> output;
+  fc -> output [label="candidate prose"];
+  output -> user;
+}
