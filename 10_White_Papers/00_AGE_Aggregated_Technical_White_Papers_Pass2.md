@@ -1,5 +1,5 @@
 ---
-title: "Amazing Game Engine [AGE] Aggregated Technical White Papers - Styleguided Pass 3"
+title: "Amazing Game Engine [AGE] Aggregated Technical White Papers - Pass 4 RAG-Corrected"
 subtitle: "Subsystem papers, data models, service packets, and acceptance tests"
 date: "2026-06-28"
 ---
@@ -27,7 +27,7 @@ Structured Query Language [SQL] is the language used in this archive for relatio
 
 Optimistic Concurrency Control [OCC] is the version-checking method used when multiple clients attempt to change the same state. A client writes against a known version. If the server version changed first, the write cannot silently overwrite the newer state. AGE then retries, rejects, or resolves the conflict through a game procedure.
 
-Retrieval-Augmented Generation [RAG] is the practice of retrieving relevant source material and placing it into a model context. AGE may use RAG inside CAL and State Assembly. AGE partitioning is stronger than RAG because a partition decides who owns truth, what can cross a boundary, what may be mutated, and how a change becomes authoritative.
+Retrieval-Augmented Generation [RAG] is the practice of retrieving relevant source material and placing it into a model context. AGE may use Retrieval-Augmented Generation as a scoped, read-only aid inside the Corpus Arbitration Layer or State Assembler when structured state cannot answer directly. It should not be the ordinary partition mechanism because it consumes input context and is not efficient as a state authority. AGE partitioning is stronger than retrieval because a partition decides who owns truth, what can cross a boundary, what may be mutated, and how a change becomes authoritative.
 
 An Application Programming Interface [API] is a defined service contract for software components. AGE internal APIs are described as request and response packets because the first implementation should make each state transition auditable.
 
@@ -43,7 +43,7 @@ This volume follows the AGE Style Guide in `00_Meta/00_AGE_STYLE_GUIDE.md`.
 1. Terminology and acronyms are defined before use in the main reader path.
 2. Runtime behavior is shown through ordered procedures, packets, property sheets, and state records.
 3. Diagrams are included where they make architecture, flow, partitioning, time, and QA easier to understand.
-4. The PDF export inserts a page break before every top-level section.
+4. The PDF export does not force a page break before every top-level section.
 5. The Addendum carries glossary and citation material.
 6. Source material remains in `_resource/` and generated PDFs remain in `90_PDF_Exports/`.
 
@@ -357,7 +357,7 @@ A property-sheet test suite should check that every object has one location or c
 
 
 
-# White Paper 3 - Partitions, Database Boundaries, and Retrieval-Augmented Generation
+# White Paper 3 - Partitions, Database Boundaries, and State Authority
 
 
 This paper follows the same presentation burden used throughout this pass: define the subsystem, define its data model, describe normal execution, describe failure behavior, and state how to test it. The purpose is to make the subsystem buildable rather than merely plausible.
@@ -365,7 +365,7 @@ This paper follows the same presentation burden used throughout this pass: defin
 
 ## Abstract
 
-AGE partitioning is a state-authority system. It uses spatial, narrative, temporal, concern, and role facets to decide what state is in scope, who can mutate it, what can cross boundaries, and how local play affects wider worlds. Partitioning can support RAG, but it is not reducible to RAG.
+AGE partitioning is a state-authority system. It uses spatial, narrative, temporal, concern, and role facets to decide what state is in scope, who can mutate it, what can cross boundaries, and how local play affects wider worlds. Partitioning can scope retrieval, but it is not retrieval. Retrieval consumes model context; partition authority commits state.
 
 ## Target Problem
 
@@ -422,7 +422,7 @@ version: 11
 
 ## Partition Boundaries Are Stronger Than Retrieval
 
-RAG can retrieve a rule, a location description, or a prior event. RAG cannot decide whether that material is authorized to change state. A partition can. This distinction matters when two troupes overlap, when a player has private knowledge, when a hidden cult observer is present, or when a realm-level faction war changes a local road.
+Retrieval can surface a rule, a location description, or a prior event, but retrieval consumes input context and is inefficient as the ordinary state mechanism. Retrieval cannot decide whether material is authorized to change state. A partition can. This distinction matters when two troupes overlap, when a player has private knowledge, when a hidden cult observer is present, or when a realm-level faction war changes a local road.
 
 The partition should produce a scoped context packet. Retrieval should operate inside that scope.
 
@@ -1443,7 +1443,7 @@ A troupe is a small group of players sharing a local narrative branch. Troupe-lo
 
 Optimistic concurrency control [OCC] is the conflict-control method used when multiple clients may attempt to change the same state. A client writes against a known version. If the version has changed, the write does not silently overwrite state. AGE either retries, rejects, or resolves the conflict through a deterministic game procedure.
 
-Retrieval-augmented generation [RAG] is the common practice of retrieving source material and placing it into a model context. AGE may use RAG inside partitions, but AGE partitioning is not merely RAG. RAG asks what information should be injected. AGE partitioning decides where truth lives, who can change it, what can cross a boundary, and how a change becomes authoritative.
+Retrieval-Augmented Generation [RAG] is the common practice of retrieving source material and placing it into a model context. AGE may use Retrieval-Augmented Generation at a partition boundary, but partitioning is not RAG. Retrieval asks what material should be injected into context. Partitioning decides where truth lives, who can change it, what can cross a boundary, and how a change becomes authoritative. Retrieval is also context-expensive, so structured state reads, identifiers, projections, and cached summaries should be preferred whenever they can answer the request.
 
 
 ## White Paper Standard Used Here
@@ -1681,7 +1681,7 @@ versions:
   schema_version: partition_schema_0_2
 ```
 
-This record is a database partition, a scheduling unit, and a semantic firewall. It is also the point at which RAG becomes subordinate to state authority. A retrieval result may be relevant, but it cannot bypass the partition's access rules or commit rules.
+This record is a database partition, a scheduling unit, and a semantic firewall. It is also the point at which retrieval becomes subordinate to state authority. A retrieval result may be relevant, but it consumes context and cannot bypass the partition's access rules or commit rules.
 
 ## Facets Instead of Taxonomy Explosion
 
@@ -1762,9 +1762,9 @@ ripple_event:
   bridge_policy: redact_private_actors_and_method
 ```
 
-## RAG Inside Partitions
+## Context-Budgeted Retrieval as a Subordinate Aid
 
-RAG should be treated as a read-only capability inside a partition. Each retrieval call should declare the partition, corpus scope, source type, time validity, and whether retrieved facts may affect state.
+Retrieval should be treated as a read-only, scoped, budgeted, and optional aid. Each retrieval call should declare the partition, corpus scope, source type, time validity, context budget, and whether retrieved facts may affect state.
 
 ```yaml
 retrieval_request:
@@ -2550,6 +2550,8 @@ Role Service provides bounded assistant behavior. It is not the same as an auton
 ```yaml
 role_service_contract:
   role_id: role_worldbuilder_biome_assistant
+  context_budget_tokens: 1200
+  prefer_structured_state: true
   purpose: "Help authors build biome event tables."
   allowed_inputs:
     - worldbuilder_prompt
@@ -3731,7 +3733,7 @@ AGE is acceptable as an MVP when it can show a repeatable state-authoritative lo
 
 **Quality Assurance [QA]:** The testing and certification practice used to verify state, rules, replay, source authority, and output fidelity.
 
-**Retrieval-Augmented Generation [RAG]:** A method that retrieves source material for model context. In AGE, RAG supports state assembly and corpus arbitration but does not replace partition authority.
+**Retrieval-Augmented Generation [RAG]:** A method that retrieves source material for model context. In AGE, RAG is a read-only, context-consuming support tool. It may assist state assembly or corpus arbitration, but it does not replace partition authority and should not be used when structured state can answer directly.
 
 **Role Sheet:** A property sheet that records role permissions, response contract, tool permissions, audit rules, and output modality.
 

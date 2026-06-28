@@ -38,3 +38,11 @@ This inventory records retained user source material and generated export locati
 
 - `90_PDF_Exports/AGE_Technical_Executive_Summary_Pass3_Styleguided_20260628.pdf` - 809987 bytes - SHA-256 `8b8af8f45ddb92ab8a413dd94e3168c0cf84cfeb35b01762bbf5ddfb2c8e93b0`
 - `90_PDF_Exports/AGE_Aggregated_Technical_White_Papers_Pass3_Styleguided_20260628.pdf` - 862077 bytes - SHA-256 `473cce99fad3833a337cf4a28d30490943717bc34c247e5f58c6eae87fbc708f`
+
+
+## Pass 4 RAG-corrected PDF exports
+
+- `90_PDF_Exports/AGE_Technical_Executive_Summary_Pass4_RAGCorrected_20260628.pdf`
+- `90_PDF_Exports/AGE_Aggregated_Technical_White_Papers_Pass4_RAGCorrected_20260628.pdf`
+
+These PDFs use two-column ordinary body prose with full-width tables, diagrams, and code blocks.

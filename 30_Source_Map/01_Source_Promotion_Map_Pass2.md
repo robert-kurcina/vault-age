@@ -25,7 +25,12 @@ This pass uses `00_Meta/00_AGE_STYLE_GUIDE.md` as the controlling AGE presentati
 2. The comparison papers remain under `_resource/comparison_whitepapers/`.
 3. The generated PDFs are stored inside `90_PDF_Exports/`.
 4. Major PDFs include a table of contents.
-5. Major PDFs use a page break before top-level sections.
+5. Major PDFs do not force page breaks before top-level sections.
 6. Executive and white-paper PDFs include an Addendum with glossary and citations.
 7. Individual white papers and specifications contain local terminology blocks so acronyms and technical terms are defined before use.
 8. The main papers use diagrams, property sheets, packets, calculations, database sketches, algorithms, and acceptance tests where the source material supports them.
+
+
+# Pass 4 RAG-Correction Note
+
+Retrieval-Augmented Generation [RAG] appeared in the origin branch as a comparison point and as a possible read-only support mechanism for source assembly. Pass 4 corrects the earlier presentation drift by removing RAG from partition titles and treating retrieval as a context-consuming, budgeted aid. The controlling concept remains partition state authority: a partition owns scope, visibility, mutation rules, bridge policy, and commit authority. Retrieval may provide evidence; it does not own truth.

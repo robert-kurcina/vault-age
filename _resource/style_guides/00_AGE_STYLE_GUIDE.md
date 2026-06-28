@@ -248,30 +248,54 @@ Required layout:
 
 The archive may also provide standalone copies for convenience, but the archive itself must be complete.
 
-## 10. PDF Export Rules
+
+## 10. Retrieval, Context Budget, and Partition Authority
+
+Retrieval-Augmented Generation [RAG] is a method that retrieves source material and places it into a model context. In AGE, RAG is not a partition architecture, not a truth store, not a mutation mechanism, and not an efficient substitute for structured state.
+
+Use this doctrine:
+
+1. Prefer structured state reads when the answer can be found in property sheets, event logs, partition records, source graphs, or projection tables.
+2. Use retrieval only when the structured state or source graph requires source-text support, conflict evidence, flavor recovery, or authorial citation.
+3. Scope retrieval by partition, source authority, time validity, role permission, and context budget.
+4. Treat retrieved text as read-only evidence until the Corpus Arbitration Layer [CAL] or State Mutation Engine accepts it through normal authority rules.
+5. Record every retrieval request that materially affects a response, including source set, retrieval snapshot, token budget, and reason for use.
+
+Retrieval consumes input context. It can crowd out more important state packets, event records, rules, and visibility constraints. AGE documents should therefore avoid making RAG appear coequal with partitions. The correct relationship is:
+
+```text
+structured state first;
+partition scope second;
+corpus arbitration when needed;
+retrieval only as a budgeted support tool;
+state mutation only through commit authority.
+```
+
+## 19. PDF Export Rules
 
 PDF exports must be generated from the Markdown source in the archive and then verified by rendering sample pages to images.
 
 PDF requirements:
 
 1. include a table of contents;
-2. place a page break before every major top-level section;
-3. preserve diagrams and tables;
+2. do not force page breaks before major top-level sections;
+3. set ordinary body prose in two columns;
+4. keep tables, diagrams, illustrations, and code blocks full-width;
+5. preserve diagrams and tables;
 4. avoid clipped text, broken tables, black squares, and missing glyphs;
 5. include an Addendum section;
 6. place glossary and citations in the Addendum;
 7. keep generated PDFs in `90_PDF_Exports/` inside the archive.
 
-For Pandoc and LaTeX exports, a page break before every top-level Markdown heading can be enforced with a LaTeX header that defines a section break.
+For Pandoc and LaTeX exports, do not enforce automatic page breaks before top-level Markdown headings unless a special print edition explicitly requires that treatment.
 
-```tex
-\usepackage{titlesec}
-\newcommand{\sectionbreak}{\clearpage}
+```css
+.top-section { break-before: auto; }
 ```
 
-This is a presentation requirement, not a writing convention. Do not insert manual page-break clutter into every Markdown file unless the export pipeline requires it.
+Do not insert manual page-break clutter into Markdown files. Use ordinary heading flow unless a special print edition calls for explicit page starts.
 
-## 11. Tables and Post-Table Notes
+## 19. Tables and Post-Table Notes
 
 Tables are useful when the reader compares structured data. Tables should not become the only place where a concept is explained.
 
@@ -296,7 +320,7 @@ Notes:
 - `version` means the sheet version read or written during a transaction.
 ```
 
-## 12. Algorithms and Runtime Procedure
+## 19. Algorithms and Runtime Procedure
 
 When AGE behavior is algorithmic, state it as an algorithm. Do not describe deterministic runtime behavior as a vague design goal.
 
@@ -320,7 +344,7 @@ Example headings:
 - CAL Answer Procedure;
 - Replay Certification Procedure.
 
-## 13. Terminology and Capitalization
+## 19. Terminology and Capitalization
 
 Preserve AGE term capitalization when a word has become a named system term.
 
@@ -347,7 +371,7 @@ Use:
 
 Do not invent new capitalization to make generic words look technical. If a term is not a named AGE component, keep it ordinary.
 
-## 14. Avoid Analyst Voice
+## 19. Avoid Analyst Voice
 
 Do not leave assistant reasoning posture in finished AGE documents.
 
@@ -374,7 +398,7 @@ Better:
 The large language model [LLM] may propose prose and candidate deltas, but only the State Mutation Engine commits canonical state.
 ```
 
-## 15. Human and System Authority
+## 19. Human and System Authority
 
 AGE documents should distinguish human authority, runtime authority, and model output.
 
@@ -387,7 +411,7 @@ AGE documents should distinguish human authority, runtime authority, and model o
 
 Do not imply that an LLM can silently create canon, silently alter inventory, silently resolve rules conflicts, or silently move time.
 
-## 16. Unsettled Material
+## 19. Unsettled Material
 
 If a value remains unsettled, say so directly. Do not write unsettled ideas as settled implementation.
 
@@ -402,7 +426,7 @@ The archive does not yet contain enough detail to specify...
 
 Do not use vague language for settled material.
 
-## 17. Addendum Requirement
+## 19. Addendum Requirement
 
 Major AGE PDFs must end with an Addendum section. The Addendum should contain:
 
@@ -414,7 +438,7 @@ Major AGE PDFs must end with an Addendum section. The Addendum should contain:
 
 The Addendum should not become the primary home for important architecture. The main document still must teach the architecture.
 
-## 18. Final Checklist
+## 19. Final Checklist
 
 Before an AGE document is ready, confirm:
 
@@ -427,7 +451,7 @@ Before an AGE document is ready, confirm:
 - Diagrams are present where architecture or flow would otherwise be dense.
 - Diagrams have source and rendered output in `assets/diagrams/`.
 - PDF exports include a table of contents.
-- PDF exports place page breaks before top-level sections.
+- PDF exports do not force page breaks before top-level sections.
 - Major PDFs have an Addendum with glossary and citations.
 - Generated PDFs are included inside `90_PDF_Exports/`.
 - Origin source remains in `_resource/origin_branch/`.
@@ -466,7 +490,7 @@ Before an AGE document is ready, confirm:
 
 **Quality Assurance [QA]:** The testing and certification practice used to verify state, rules, replay, source authority, and output fidelity.
 
-**Retrieval-Augmented Generation [RAG]:** A method that retrieves source material for model context. In AGE, RAG supports state assembly and corpus arbitration but does not replace partition authority.
+**Retrieval-Augmented Generation [RAG]:** A method that retrieves source material for model context. In AGE, Retrieval-Augmented Generation can support state assembly and corpus arbitration, but it consumes model context and does not replace partition authority.
 
 **Structured Query Language [SQL]:** The relational database language used in AGE schema sketches.
 

@@ -1,5 +1,5 @@
 ---
-title: "Amazing Game Engine [AGE] Technical Executive Summary - Styleguided Pass 3"
+title: "Amazing Game Engine [AGE] Technical Executive Summary - Pass 4 RAG-Corrected"
 subtitle: "State authority, partitions, property sheets, time, location, and corpus arbitration"
 date: "2026-06-28"
 ---
@@ -27,7 +27,7 @@ Structured Query Language [SQL] is the language used in this archive for relatio
 
 Optimistic Concurrency Control [OCC] is the version-checking method used when multiple clients attempt to change the same state. A client writes against a known version. If the server version changed first, the write cannot silently overwrite the newer state. AGE then retries, rejects, or resolves the conflict through a game procedure.
 
-Retrieval-Augmented Generation [RAG] is the practice of retrieving relevant source material and placing it into a model context. AGE may use RAG inside CAL and State Assembly. AGE partitioning is stronger than RAG because a partition decides who owns truth, what can cross a boundary, what may be mutated, and how a change becomes authoritative.
+Retrieval-Augmented Generation [RAG] is the practice of retrieving relevant source material and placing it into a model context. AGE may use Retrieval-Augmented Generation as a scoped, read-only aid inside the Corpus Arbitration Layer or State Assembler when structured state cannot answer directly. It should not be the ordinary partition mechanism because it consumes input context and is not efficient as a state authority. AGE partitioning is stronger than retrieval because a partition decides who owns truth, what can cross a boundary, what may be mutated, and how a change becomes authoritative.
 
 An Application Programming Interface [API] is a defined service contract for software components. AGE internal APIs are described as request and response packets because the first implementation should make each state transition auditable.
 
@@ -50,7 +50,7 @@ This summary follows the AGE Style Guide in `00_Meta/00_AGE_STYLE_GUIDE.md`.
 1. Terms are defined before use.
 2. Architecture is explained in prose and shown diagrammatically.
 3. Runtime behavior is demonstrated with property sheets, packets, and ordered procedures.
-4. The PDF export inserts a page break before each top-level section.
+4. The PDF export does not force a page break before each top-level section.
 5. The Addendum contains glossary and citation material.
 
 ## Executive Thesis
@@ -401,7 +401,7 @@ A troupe is a small group of players sharing a local narrative branch. Troupe-lo
 
 Optimistic concurrency control [OCC] is the conflict-control method used when multiple clients may attempt to change the same state. A client writes against a known version. If the version has changed, the write does not silently overwrite state. AGE either retries, rejects, or resolves the conflict through a deterministic game procedure.
 
-Retrieval-augmented generation [RAG] is the common practice of retrieving source material and placing it into a model context. AGE may use RAG inside partitions, but AGE partitioning is not merely RAG. RAG asks what information should be injected. AGE partitioning decides where truth lives, who can change it, what can cross a boundary, and how a change becomes authoritative.
+Retrieval-Augmented Generation [RAG] is the common practice of retrieving source material and placing it into a model context. AGE may use Retrieval-Augmented Generation at a partition boundary, but partitioning is not RAG. Retrieval asks what material should be injected into context. Partitioning decides where truth lives, who can change it, what can cross a boundary, and how a change becomes authoritative. Retrieval is also context-expensive, so structured state reads, identifiers, projections, and cached summaries should be preferred whenever they can answer the request.
 
 
 ## Executive Thesis
@@ -501,7 +501,7 @@ The spatial ladder is World -> Region -> Realm -> Locus -> Submap. The narrative
 
 ![Partition topology and troupe isolation](assets/diagrams/partition_topology.png)
 
-A partition is stronger than retrieval. RAG can place relevant text into a prompt. A partition decides whether that text is allowed to matter. A partition also decides whether a change can cross from one troupe to another. A troupe can affect the world, but it should not directly overwrite another troupe's local scene. The correct route is local commit -> ripple event -> world or region partition -> aggregation and redaction -> rumor, news, market change, faction reaction, or background consequence in another troupe's partition.
+A partition is stronger than retrieval. Retrieval-Augmented Generation can place relevant text into a prompt, but it consumes scarce input context and may omit, over-rank, or mis-rank material. A partition decides whether retrieved text is allowed to matter. A partition also decides whether a change can cross from one troupe to another. A troupe can affect the world, but it should not directly overwrite another troupe's local scene. The correct route is local commit -> ripple event -> world or region partition -> aggregation and redaction -> rumor, news, market change, faction reaction, or background consequence in another troupe's partition.
 
 ## Time Must Be Authoritative
 
@@ -778,7 +778,7 @@ The most important word is preserve. AGE does not win because it generates more 
 
 **Quality Assurance [QA]:** The testing and certification practice used to verify state, rules, replay, source authority, and output fidelity.
 
-**Retrieval-Augmented Generation [RAG]:** A method that retrieves source material for model context. In AGE, RAG supports state assembly and corpus arbitration but does not replace partition authority.
+**Retrieval-Augmented Generation [RAG]:** A method that retrieves source material for model context. In AGE, RAG is a read-only, context-consuming support tool. It may assist state assembly or corpus arbitration, but it does not replace partition authority and should not be used when structured state can answer directly.
 
 **Role Sheet:** A property sheet that records role permissions, response contract, tool permissions, audit rules, and output modality.
 

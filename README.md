@@ -1,24 +1,26 @@
-# AGE Technical Presentation Pass 3 Styleguided Archive
+# AGE Technical Presentation Pass 5 No Top-Level Breaks Archive
 
-This archive applies the AGE Style Guide to the technical white-paper corpus.
+This archive applies the AGE Style Guide to the technical white-paper corpus and corrects the prior over-promotion of Retrieval-Augmented Generation [RAG]. In this pass, RAG is treated as a read-only, context-consuming support tool. It is not a partition mechanism, truth store, mutation authority, or efficient substitute for structured state.
 
 ## Primary style guide
 
 - `00_Meta/00_AGE_STYLE_GUIDE.md`
 
-The AGE Style Guide requires definition-before-use, visible process, ordered and unordered lists, property-sheet examples, calculations where useful, diagrams where useful, PDF page breaks between top-level sections, Addendum sections with glossary and citations, and preservation of source material under `_resource/`.
+The AGE Style Guide requires definition-before-use, visible process, ordered and unordered lists, property-sheet examples, calculations where useful, diagrams where useful, two-column ordinary body prose in PDF exports, full-width tables, full-width diagrams, full-width code blocks, Addendum sections with glossary and citations, and preservation of source material under `_resource/`.
 
 ## Primary documents
 
 - `00_Executive/01_AGE_Technical_Executive_Summary_Pass2.md`
 - `10_White_Papers/00_AGE_Aggregated_Technical_White_Papers_Pass2.md`
 
-The filenames preserve the Pass 2 source lineage, but the contents are now Styleguided Pass 3.
+The Markdown filenames preserve earlier source lineage where useful. The contents are now Pass 5 no-top-level-breaks and PDF-ready.
 
 ## PDF exports included in this archive
 
-- `90_PDF_Exports/AGE_Technical_Executive_Summary_Pass3_Styleguided_20260628.pdf`
-- `90_PDF_Exports/AGE_Aggregated_Technical_White_Papers_Pass3_Styleguided_20260628.pdf`
+- `90_PDF_Exports/AGE_Technical_Executive_Summary_Pass5_NoTopLevelBreaks_20260628.pdf`
+- `90_PDF_Exports/AGE_Aggregated_Technical_White_Papers_Pass5_NoTopLevelBreaks_20260628.pdf`
+
+The PDFs use two columns for ordinary body prose. Tables, diagrams, illustrations, and code blocks are rendered full-width.
 
 ## Resource directory
 
@@ -29,11 +31,13 @@ The filenames preserve the Pass 2 source lineage, but the contents are now Style
 - `_resource/comparison_whitepapers/`
 - `_resource/resource_inventory/00_Resource_Inventory.md`
 
+The origin branch remains retained byte-for-byte as `_resource/origin_branch/Archive.zip` and extracted for review under `_resource/origin_branch/extracted/`.
+
 ## Individual subsystem white papers
 
 - `10_White_Papers/01_Core_Runtime_and_State_Authority.md`
 - `10_White_Papers/02_Property_Sheets_and_State_Model.md`
-- `10_White_Papers/03_Partitions_Database_Boundaries_and_RAG.md`
+- `10_White_Papers/03_Partitions_Database_Boundaries_and_State_Authority.md`
 - `10_White_Papers/04_Time_Location_and_Causal_Cohesion.md`
 - `10_White_Papers/05_AGEScript_Event_Generators_and_Consequence.md`
 - `10_White_Papers/06_LMS_Graph_CAL_and_Rules_Authority.md`
@@ -53,3 +57,15 @@ The filenames preserve the Pass 2 source lineage, but the contents are now Style
 ## Diagrams
 
 Graphviz DOT sources and PNG renders are retained in `assets/diagrams/`.
+
+## Pass 5 correction
+
+1. The partition paper no longer places RAG in the title.
+2. The main documents state that retrieval consumes input context and should be budgeted.
+3. Structured state reads are preferred over retrieval when the state model can answer directly.
+4. Retrieval results cannot mutate state, bypass visibility, cross troupe boundaries, or override partition authority.
+5. The PDFs are regenerated from the corrected Markdown and HTML sources and included inside `90_PDF_Exports/`.
+
+## Pass 5 PDF layout correction
+
+The AGE Style Guide no longer requires page breaks before top-level sections. The PDFs retain a table of contents and cover-page breaks, but ordinary top-level sections continue in document flow unless a table, diagram, code block, or natural pagination requires a new page.

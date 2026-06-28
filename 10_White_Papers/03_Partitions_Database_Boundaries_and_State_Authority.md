@@ -1,4 +1,4 @@
-# White Paper 3 - Partitions, Database Boundaries, and Retrieval-Augmented Generation
+# White Paper 3 - Partitions, Database Boundaries, and State Authority
 
 ## Definitions Used in This File
 
@@ -19,7 +19,7 @@ This paper follows the same presentation burden used throughout this pass: defin
 
 ## Abstract
 
-AGE partitioning is a state-authority system. It uses spatial, narrative, temporal, concern, and role facets to decide what state is in scope, who can mutate it, what can cross boundaries, and how local play affects wider worlds. Partitioning can support RAG, but it is not reducible to RAG.
+AGE partitioning is a state-authority system. It uses spatial, narrative, temporal, concern, and role facets to decide what state is in scope, who can mutate it, what can cross boundaries, and how local play affects wider worlds. Partitioning can scope retrieval, but it is not retrieval. Retrieval consumes model context; partition authority commits state.
 
 ## Target Problem
 
@@ -76,7 +76,7 @@ version: 11
 
 ## Partition Boundaries Are Stronger Than Retrieval
 
-RAG can retrieve a rule, a location description, or a prior event. RAG cannot decide whether that material is authorized to change state. A partition can. This distinction matters when two troupes overlap, when a player has private knowledge, when a hidden cult observer is present, or when a realm-level faction war changes a local road.
+Retrieval can surface a rule, a location description, or a prior event, but retrieval consumes input context and is inefficient as the ordinary state mechanism. Retrieval cannot decide whether material is authorized to change state. A partition can. This distinction matters when two troupes overlap, when a player has private knowledge, when a hidden cult observer is present, or when a realm-level faction war changes a local road.
 
 The partition should produce a scoped context packet. Retrieval should operate inside that scope.
 
